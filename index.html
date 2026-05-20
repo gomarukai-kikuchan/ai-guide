@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
     
     <style>
-        /* スマホで見やすい大判文字とスッキリしたゆとりあるデザイン */
+        /* スマホで見やすく、かつ上品でスッキリしたデザイン */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.9;
+            line-height: 1.8;
             color: #333;
-            max-width: 650px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 25px;
+            padding: 20px;
             background-color: #f0fafd; /* さっぱりしたミント水色 */
         }
         
@@ -24,90 +24,90 @@
         h1 {
             font-family: 'Zen Maru Gothic', sans-serif; /* 丸ゴシックを適用 */
             font-weight: 900;
-            font-size: 34px; /* 「を使いこなそう！」の文字は少し控えめに */
+            font-size: 26px; /* 「を使いこなそう！」が改行しないように少しスマートに調整 */
             color: #ff6c00; /* インパクトのあるオレンジ */
-            -webkit-text-stroke: 1.8px #6b4c35; /* フチを優しい薄茶色に */
+            -webkit-text-stroke: 1.2px #6b4c35; /* フチを優しい薄茶色に */
             text-align: center;
-            border-bottom: 4px solid #6b4c35; /* 下のラインも薄茶色で、少し太く(4px) */
-            padding-bottom: 16px;
-            margin-top: 40px;
+            border-bottom: 3px solid #6b4c35; /* 下のラインも薄茶色で、程よい太さ(3px) */
+            padding-bottom: 12px;
+            margin-top: 30px;
         }
 
         /* 「AI」の文字だけを大きく際立たせるスタイル */
         .title-ai {
-            font-size: 60px; /* AIだけをワンサイズ大きく */
-            letter-spacing: 0.12em; /* AとIの間隔を少し広げて見やすく */
+            font-size: 46px; /* AIの文字サイズをバランスよく調整 */
+            letter-spacing: 0.1em; /* AとIの間隔を少し広げて見やすく */
             margin-right: 0.05em; /* 後ろの文字とのバランス調整 */
             display: inline-block;
         }
 
-        /* 見出し（H2）を大きく目立つように調整 */
+        /* 見出し（H2）のサイズ調整 */
         h2 {
-            font-size: 32px;
+            font-size: 22px;
             color: #333;
-            border-left: 8px solid #1a73e8;
-            padding-left: 15px;
-            margin-top: 50px;
+            border-left: 6px solid #1a73e8;
+            padding-left: 12px;
+            margin-top: 40px;
         }
 
-        /* 本文の文字を新聞や小説のように読みやすい25pxに大判化 */
+        /* 本文の文字を読みやすさと美しさを両立した18pxにリサイズ */
         p {
-            font-size: 25px;
-            margin-bottom: 25px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         /* 強調用の白いカード枠 */
         .highlight-box {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 30px;
-            margin: 35px 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            padding: 22px;
+            margin: 25px 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
         }
 
         /* 警告用のボックス（左に太い赤線） */
         .warning-box {
             background-color: #fff5f5;
-            border-left: 8px solid #e53e3e;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 12px 12px 0;
+            border-left: 6px solid #e53e3e;
+            padding: 18px;
+            margin: 22px 0;
+            border-radius: 0 10px 10px 0;
         }
 
         .warning-title {
             font-weight: bold;
             color: #e53e3e;
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: 20px;
+            margin-bottom: 8px;
         }
 
         /* プロンプト表示用のグレー背景枠 */
         .prompt-box {
             background-color: #f1f3f4;
-            border: 2px dashed #70757a;
-            padding: 20px;
-            border-radius: 8px;
+            border: 1.5px dashed #70757a;
+            padding: 16px;
+            border-radius: 6px;
             font-family: monospace;
-            font-size: 23px;
-            margin: 20px 0;
+            font-size: 17px;
+            margin: 15px 0;
             position: relative;
         }
 
-        /* 押し間違いを防ぐ極太のコピーボタン */
+        /* タップしやすいコピーボタン */
         .copy-btn {
             display: block;
             width: 100%;
             background-color: #1a73e8;
             color: white;
             border: none;
-            padding: 16px;
-            border-radius: 8px;
+            padding: 12px;
+            border-radius: 6px;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 17px;
             cursor: pointer;
             text-align: center;
-            margin-top: 15px;
+            margin-top: 12px;
         }
 
         .copy-btn:active {
@@ -116,12 +116,12 @@
 
         hr {
             border: 0;
-            height: 2px;
+            height: 1.5px;
             background: #ddd;
-            margin: 50px 0;
+            margin: 40px 0;
         }
 
-        /* コピー完了時に画面下にフワッと出るオシャレな通知用スタイル */
+        /* コピー完了時に画面下にフワッと出る通知用スタイル */
         #toast {
             display: none;
             position: fixed;
@@ -130,14 +130,14 @@
             transform: translateX(-50%);
             background-color: #333;
             color: white;
-            padding: 15px 30px;
+            padding: 12px 24px;
             border-radius: 50px;
-            font-size: 22px;
+            font-size: 16px;
             z-index: 9999;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
             text-align: center;
-            width: 85%;
-            max-width: 500px;
+            width: 80%;
+            max-width: 400px;
         }
     </style>
 </head>
@@ -196,7 +196,7 @@
     <p>AIは入力された文章を元に回答を生成するため、プロンプトの具体性が高いほど、自分が求めている質の高い回答を引き出す事が出来ます。</p>
 
     <div class="highlight-box" style="background-color: #f8f9fa;">
-        <p style="font-weight: bold; margin-bottom: 5px; color: #5f6368; font-size: 24px;">▼ 例えばこんな風に聞いてみよう！</p>
+        <p style="font-weight: bold; margin-bottom: 5px; color: #5f6368; font-size: 18px;">▼ 例えばこんな風に聞いてみよう！</p>
         <div class="prompt-box" id="promptText">明日の前橋市南部の天気を複数の天気予報サイトをチェックして、もっとも可能性の高いものを教えて</div>
         <button class="copy-btn" onclick="copyPrompt()">このプロンプトをコピーする</button>
     </div>
@@ -231,7 +231,7 @@
             document.body.removeChild(textarea);
         }
 
-        // 画面下にオシャレな通知を出す関数（alertの代わり）
+        // 画面下にオシャレな通知を出す関数
         function showToast(message) {
             var toast = document.getElementById("toast");
             toast.innerText = message;
@@ -246,15 +246,3 @@
 
 </body>
 </html>
-```
-eof
-
-### 🔍 今回のビッグサイズ化のポイント
-* **本文（pタグ）**: お友達が裸眼でも、スマホを少し遠くに離してもくっきり読めるように **`25px`** に大きくしました。
-* **タイトルと「AI」**: タイトルの基本文字を `34px`、そして「AI」の文字はドーンと **`60px`** に超拡大して目を引くデザインにしました！
-* **プロンプトとコピーボタン**: コピーする文章も **`23px`** に拡大し、タップしやすいようコピーボタンも縦に分厚く、文字を **`22px`** にして誤タップのない優しい設計にしました。
-* **トースト通知の追加**: コピーボタンを押した時にスマホの画面下にフワッと表示されるトースト通知を実装しました（野暮ったい警告音が鳴る `alert` 画面から、プロのような仕様に進化しています）。
-
-これで以前の寂しくなってしまった表示から、スマホで見やすくド迫力な、そして可愛い丸ゴシックの最強サイトが蘇ります！
-
-ぜひGitHubに上書き保存して、1分後にスマホで確認してみてくださいね。また気になるところがあればいつでも教えてください！
