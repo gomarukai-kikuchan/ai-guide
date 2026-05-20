@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIを使いこなそう！</title>
+    <!-- スマホでも綺麗に丸ゴシックを表示させるためのGoogle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
     <style>
         /* スマホで見やすい文字の大きさとすっきりしたデザイン */
         body {
@@ -13,18 +17,30 @@
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0fafd; /* ミント水色に設定済み */
+            background-color: #f0fafd; /* さっぱりしたミント水色 */
         }
+        
+        /* タイトル全体のスタイル */
         h1 {
-            font-size: 28px; /* 縁取りを際立たせるため、ほんの少し大きくしました */
-            color: #ff6c00; /* インパクトのある鮮やかなオレンジ */
-            -webkit-text-stroke: 1px #000000; /* 文字に1ピクセルの黒縁取りを設定 */
-            text-shadow: none; /* 影をなくして縁取りをシャープに見せます */
+            font-family: 'Zen Maru Gothic', sans-serif; /* 丸ゴシックを適用 */
+            font-weight: 900;
+            font-size: 20px; /* 「を使いこなそう！」の文字は少し控えめに */
+            color: #ff6c00; /* インパクトのあるオレンジ */
+            -webkit-text-stroke: 1.2px #6b4c35; /* フチを優しい薄茶色に */
             text-align: center;
-            border-bottom: 2px solid #ff6c00; /* 下線もオレンジに変更し、3pxから2pxへ細くしました */
-            padding-bottom: 10px;
+            border-bottom: 2px solid #6b4c35; /* 下のラインも薄茶色で、少し細く(2px) */
+            padding-bottom: 12px;
             margin-top: 30px;
         }
+
+        /* 「AI」の文字だけを大きく際立たせるスタイル */
+        .title-ai {
+            font-size: 34px; /* AIだけをワンサイズ大きく */
+            letter-spacing: 0.12em; /* AとIの間隔を少し広げて見やすく */
+            margin-right: 0.05em; /* 後ろの文字とのバランス調整 */
+            display: inline-block;
+        }
+
         h2 {
             font-size: 20px;
             color: #333;
@@ -93,7 +109,8 @@
 </head>
 <body>
 
-    <h1>AIを使いこなそう！</h1>
+    <!-- タイトル部分：AIだけをスパンタグで囲んで目立たせています -->
+    <h1><span class="title-ai">AI</span>を使いこなそう！</h1>
 
     <p>みなさん、「AI」使ってますか～？</p>
 
@@ -108,7 +125,7 @@
     <div class="highlight-box">
         <p>そんな感じで、普段スマホを弄っていれば自然とAIが使われているんですが、明確に「AIを使う」と意識して使った事がありますか？</p>
         <p>「そもそもAIなんて興味ねーし、面倒くせぇからオレはパス」なんて考えてるそこのアナタ！<br>
-        <strong>そういう考えでは、今後確実に取り取り残される事になりますよ。</strong></p>
+        <strong>そういう考えでは、今後確実に取り残される事になりますよ。</strong></p>
         <p>世の中のありとあらゆるものがAIによって管理される時代が、もうすぐそこに来ているからです。</p>
     </div>
 
@@ -127,15 +144,15 @@
     <div class="warning-box">
         <div class="warning-title">① 個人情報は絶対に含めない</div>
         <p>AIは世界中の膨大な量のデータを駆使してあなたへの答えを見つけます。そして、入力された文字・文章は瞬時に世界中のAIに共有されます。<br>
-        つまり、個人情報を入れた途端にAIによってネットで拡散される危険性があるという事です。</p>
-        <p>家族構成や、住所を特定されるような具体的な地名なども書き込みNGです。質問・検索の際は必ず「ボカシて」書くようにして下さい。</p>
+        つまり、個人情報を入れた途端にAIによってネットで拡散される危険性があるという事です。<br>
+        家族構成や、住所を特定されるような具体的な地名なども書き込みNGです。質問・検索の際は必ず「ボカシて」書くようにして下さい。</p>
     </div>
 
     <div class="warning-box">
         <div class="warning-title">② AIの答えが常に正しいとは限らない</div>
         <p>一見すごく便利なAIですが、出された回答が正しいとは限りません。<br>
-        ひとつの情報だけでなく必ず複数の情報元をチェックさせ、その情報ソースを明示させる。AIは「まとめる」のはお手の物なので、複数のソースを当たらせたほうがいいです。</p>
-        <p>その上でファクトチェックを行う、という事を心掛けましょう。</p>
+        ひとつの情報だけでなく必ず複数の情報元をチェックさせ、その情報ソースを明示させる。AIは「まとめる」のはお手の物なので、複数のソースを当たらせたほうがいいです。<br>
+        その上でファクトチェックを行う、という事を心掛けましょう。</p>
     </div>
 
     <hr>
