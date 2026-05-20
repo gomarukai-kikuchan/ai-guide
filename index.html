@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIを使いこなそう！</title>
-    <!-- スマホでも綺麗に丸ゴシックを表示させるためのGoogle Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ... existing code ... -->
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
     <style>
         /* スマホで見やすい文字の大きさとすっきりしたデザイン */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.8;
+            line-height: 1.9;
             color: #333;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 25px;
             background-color: #f0fafd; /* さっぱりしたミント水色 */
         }
         
@@ -24,63 +16,63 @@
         h1 {
             font-family: 'Zen Maru Gothic', sans-serif; /* 丸ゴシックを適用 */
             font-weight: 900;
-            font-size: 20px; /* 「を使いこなそう！」の文字は少し控えめに */
+            font-size: 34px; /* 「を使いこなそう！」の文字は少し控えめに */
             color: #ff6c00; /* インパクトのあるオレンジ */
-            -webkit-text-stroke: 1.2px #6b4c35; /* フチを優しい薄茶色に */
+            -webkit-text-stroke: 1.8px #6b4c35; /* フチを優しい薄茶色に */
             text-align: center;
-            border-bottom: 2px solid #6b4c35; /* 下のラインも薄茶色で、少し細く(2px) */
-            padding-bottom: 12px;
-            margin-top: 30px;
+            border-bottom: 4px solid #6b4c35; /* 下のラインも薄茶色で、少し太く(4px) */
+            padding-bottom: 16px;
+            margin-top: 40px;
         }
 
         /* 「AI」の文字だけを大きく際立たせるスタイル */
         .title-ai {
-            font-size: 34px; /* AIだけをワンサイズ大きく */
+            font-size: 60px; /* AIだけをワンサイズ大きく */
             letter-spacing: 0.12em; /* AとIの間隔を少し広げて見やすく */
             margin-right: 0.05em; /* 後ろの文字とのバランス調整 */
             display: inline-block;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 32px;
             color: #333;
-            border-left: 5px solid #1a73e8;
-            padding-left: 10px;
-            margin-top: 40px;
+            border-left: 8px solid #1a73e8;
+            padding-left: 15px;
+            margin-top: 50px;
         }
         p {
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 25px;
+            margin-bottom: 25px;
         }
         .highlight-box {
             background-color: #fff;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 35px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
         .warning-box {
             background-color: #fff5f5;
-            border-left: 5px solid #e53e3e;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            border-left: 8px solid #e53e3e;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
         }
         .warning-title {
             font-weight: bold;
             color: #e53e3e;
-            font-size: 17px;
-            margin-bottom: 5px;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
         .prompt-box {
             background-color: #f1f3f4;
-            border: 1px dashed #70757a;
-            padding: 15px;
-            border-radius: 6px;
+            border: 2px dashed #70757a;
+            padding: 20px;
+            border-radius: 8px;
             font-family: monospace;
-            font-size: 15px;
-            margin: 15px 0;
+            font-size: 23px;
+            margin: 20px 0;
             position: relative;
         }
         .copy-btn {
@@ -89,96 +81,34 @@
             background-color: #1a73e8;
             color: white;
             border: none;
-            padding: 10px;
-            border-radius: 4px;
+            padding: 16px;
+            border-radius: 8px;
             font-weight: bold;
+            font-size: 22px;
             cursor: pointer;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         .copy-btn:active {
             background-color: #1557b0;
         }
         hr {
             border: 0;
-            height: 1px;
+            height: 2px;
             background: #ddd;
-            margin: 40px 0;
+            margin: 50px 0;
         }
     </style>
 </head>
-<body>
+<!-- ... existing code ... -->
+```
+eof
 
-    <!-- タイトル部分：AIだけをスパンタグで囲んで目立たせています -->
-    <h1><span class="title-ai">AI</span>を使いこなそう！</h1>
+### 🔍 今回のビッグサイズ化のポイント
+* **本文（pタグ）**: `16px` から、一気に新聞や小説のように読みやすい大画面向けの **`25px`** にサイズアップしました。
+* **タイトルと「AI」**: タイトルを `34px`、そして「AI」の文字はドーンと **`60px`** に大きくしました。フチの細さも文字サイズに合わせて少し太く（`1.8px`）しています。
+* **見出し（h2）と警告タイトル**: `32px` 前後に拡大し、横の青ラインも太くして目立たせています。
+* **プロンプトとコピーボタン**: コピーする文章も **`23px`** に拡大し、タップしやすいようボタンも縦に分厚く（文字サイズ **`22px`**）して押し間違いのない優しい設計にしました。
 
-    <p>みなさん、「AI」使ってますか～？</p>
-
-    <p>今はスマホに標準搭載されている事が多いので、何か検索して調べれば意識してなくても使っている事になります。<br>
-    便利ですよね～、瞬時に調べたい事が分かりますからね、それもかなり具体的に。</p>
-
-    <p>以前はキーワードをいくつか区切って入力し検索してましたが、今は会話のように質問すれば答えてくれます。（文字入力だけじゃなく音声入力も出来ます）<br>
-    いわゆるチャット方式ですね。</p>
-
-    <p>更に、検索だけじゃなくスマホのバッテリー管理なんかもAIがやっています。</p>
-
-    <div class="highlight-box">
-        <p>そんな感じで、普段スマホを弄っていれば自然とAIが使われているんですが、明確に「AIを使う」と意識して使った事がありますか？</p>
-        <p>「そもそもAIなんて興味ねーし、面倒くせぇからオレはパス」なんて考えてるそこのアナタ！<br>
-        <strong>そういう考えでは、今後確実に取り残される事になりますよ。</strong></p>
-        <p>世の中のありとあらゆるものがAIによって管理される時代が、もうすぐそこに来ているからです。</p>
-    </div>
-
-    <p>AIは文章を作るだけじゃないんです。<br>
-    今はスマホで検索、程度で全然オッケーですが、少しずつAIを「意識」して使うようにして下さい。</p>
-
-    <p>ある程度AIを使いこなせるようになれば、物事の「効率化」によって無駄な時間が大幅に減ります。<br>
-    何と言っても、我々ジーサンはこの先何年生きられるか分かりませんからね（笑）<br>
-    更に「ボケ防止」にもなるので一石二鳥です。</p>
-
-    <hr>
-
-    <h2>🚨 AIを使う上での「2つの重要ルール」</h2>
-    <p>ここで、AIを使う上で注意しなければならない「重要」な事を2つ。知ってる人が多いと思いますが、注意喚起の意味で書いておきます。</p>
-
-    <div class="warning-box">
-        <div class="warning-title">① 個人情報は絶対に含めない</div>
-        <p>AIは世界中の膨大な量のデータを駆使してあなたへの答えを見つけます。そして、入力された文字・文章は瞬時に世界中のAIに共有されます。<br>
-        つまり、個人情報を入れた途端にAIによってネットで拡散される危険性があるという事です。<br>
-        家族構成や、住所を特定されるような具体的な地名なども書き込みNGです。質問・検索の際は必ず「ボカシて」書くようにして下さい。</p>
-    </div>
-
-    <div class="warning-box">
-        <div class="warning-title">② AIの答えが常に正しいとは限らない</div>
-        <p>一見すごく便利なAIですが、出された回答が正しいとは限りません。<br>
-        ひとつの情報だけでなく必ず複数の情報元をチェックさせ、その情報ソースを明示させる。AIは「まとめる」のはお手の物なので、複数のソースを当たらせたほうがいいです。<br>
-        その上でファクトチェックを行う、という事を心掛けましょう。</p>
-    </div>
-
-    <hr>
-
-    <h2>💡 上手く使いこなすコツは「プロンプト」</h2>
-    <p>最後に、AIを上手く使いこなすという事は<strong>「プロンプトを工夫する」</strong>という事です。</p>
-    <p>プロンプトとは「質問」や「指示」を入力する命令文のことです。何をするにもこれが無いと始まらないので、絶対にこの言葉は覚えておきましょう。</p>
-    <p>AIは入力された文章を元に回答を生成するため、プロンプトの具体性が高いほど、自分が求めている質の高い回答を引き出す事が出来ます。</p>
-
-    <div class="highlight-box" style="background-color: #f8f9fa;">
-        <p style="font-weight: bold; margin-bottom: 5px; color: #5f6368;">▼ 例えばこんな風に聞いてみよう！</p>
-        <div class="prompt-box" id="promptText">明日の前橋市南部の天気を複数の天気予報サイトをチェックして、もっとも可能性の高いものを教えて</div>
-        <button class="copy-btn" onclick="copyPrompt()">このプロンプトをコピーする</button>
-    </div>
-
-    <p>というように、具体的かつ情報の正確性も担保するようなプロンプトを心掛けましょう。</p>
-
-    <script>
-        // ボタンを押したらプロンプトをコピーする仕掛け
-        function copyPrompt() {
-            var text = document.getElementById("promptText").innerText;
-            navigator.clipboard.writeText(text).then(function() {
-                alert("プロンプトをコピーしました！AIアプリに貼り付けて使ってみてね。");
-            });
-        }
-    </script>
-
-</body>
-</html>
+保存できたらまたスマホで見てみてください！
+「お、今度はバッチリ見やすいぞ！」となるはずです。感想を楽しみに待っていますね。
